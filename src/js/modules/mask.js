@@ -19,7 +19,7 @@ const mask = (selector) => {
         let matrix = '+38 (0__) ___ __ __',
         i = 0,
         def = matrix.replace(/\D/g, ''),
-        val = this.value.replace(/\D/g, '');
+        val = this.value.replace(/\D/g, '')
 
         if (def.length >= val.length){
             val = def;
