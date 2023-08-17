@@ -16,10 +16,10 @@ const mask = (selector) => {
     };
 
     function createMask(event) {
-        let matrix = '+38 (0__) ___ __ __',
+        let matrix = '+380 (___) ___ ___',
         i = 0,
         def = matrix.replace(/\D/g, ''),
-        val = this.value.replace(/\D/g, '')
+        val = this.value.replace(/\D/g, '');
 
         if (def.length >= val.length){
             val = def;
@@ -30,7 +30,7 @@ const mask = (selector) => {
         });
 
         if(event.type === 'blur') {
-            if(this.value.length == 2) {
+            if(this.value.length == 3) {
                 this.value = '';
             } 
         } else {
@@ -44,7 +44,8 @@ const mask = (selector) => {
         input.addEventListener('input', createMask);
         input.addEventListener('focus', createMask);
         input.addEventListener('blur', createMask);
-    })
+    });
+
 }
 
 export default mask;
