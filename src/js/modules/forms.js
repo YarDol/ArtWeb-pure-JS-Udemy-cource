@@ -19,8 +19,6 @@ const forms = () => {
         question: 'assets/question.php'
     }
 
-    postData();
-
     const clearInputs = () => {
         input.forEach(item => {
             item.value = '';
