@@ -1,3 +1,7 @@
 # ArtWeb-pure-JS-Udemy-cource-
-JS practice
-![image](https://github.com/YarDol/ArtWeb-pure-JS-Udemy-cource-/assets/94075933/5c58ed2c-5e27-401b-9ed2-e7c37923e2af)
+
+To work with this build in a new project, clone the entire repository contents
+git clone <this repo> Then, while in the root of the project, run the npm i command, which will install all the dependencies in package.json. After that, you can use any of the suggested build commands (the final files end up in the app folder of the root directory):
+gulp - a basic command that runs a build for development using browser-sync
+
+gulp build - the command for production build of the project. All assemblies are compressed and optimized for hosting.
